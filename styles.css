@@ -1,0 +1,159 @@
+* {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero {
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .menu__img {
+    width: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    background-color: #efefef;
+    border-radius: 20px;
+    outline : none;
+    border: none;
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    background : #999;
+    /* padding : 1px; */
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.lamp__container {
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp {
+    width: 100%;
+}
+
+.light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text__container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text__container h1 {
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.text__container p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.text__container a {
+    display: inline-block;
+    background: #00986f;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.line {
+    height: 4px;
+    width: 250px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+.control .line span {
+    width : 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+
+.active {
+    transition: ease-in-out 0.5s;
+    background-color: #00986f;
+}
+
+.active span {
+    transition: ease-in-out 0.5s;
+    background-color: #fff;
+    margin-left: 31px;
+}
+
+.lightActive {
+    opacity: 1;
+}
